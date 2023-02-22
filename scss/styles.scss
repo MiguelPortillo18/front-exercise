@@ -1,0 +1,104 @@
+@import "variables";
+@import "cards";
+@import "buttons";
+
+.main-content-area {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 400px;
+    top: 171px; 
+
+    .cards {
+        
+        &.card__orange {
+            background-color: $color-orange;
+            border-radius: .625rem 0rem 0rem .625rem;
+        }
+
+        &.card__aqua {
+            background-color: $color-turquesa;
+        }
+
+        &.card__green {
+            background-color: $color-green;
+            border-radius: 0rem .625rem .625rem 0rem;
+        }
+    }
+
+    .sedan-icon {
+        position: absolute;
+        left: 2.8125rem;
+        top: 3.4375rem;
+    }
+    
+    .suvs-icon {
+        position: absolute;
+        top: 3.4375rem;
+        left: 22.1875rem;
+    }
+
+    .luxury-icon {
+        position: absolute;
+        top: 3.4375rem;
+        left: 41.5625rem;
+    }
+
+    .content-info-area {
+        display: flex;
+        flex-direction: column;
+        margin-top: 7.1875rem;
+
+        .card__title {
+            font-family: $title-font;
+            font-size: $title-font-size;
+            font-style: normal;
+            text-transform: uppercase;
+            line-height: 3rem;
+            color: white;
+            margin-left: 2.8125rem;
+            margin-bottom: .9375rem;
+        }
+
+        .card__desc {
+            font-family: $text-font;
+            font-size: $text-font-size;
+            color: white;
+            opacity: 0.75;
+            height: 7.8125rem;
+            font-weight: 400;
+            line-height: 1.5625rem;
+            margin-left: 2.8125rem;
+            margin-bottom: 1.875rem;
+
+            &.sedan__desc {
+                width: 60%;
+            }
+
+            &.suvs__desc {
+                width: 60%;
+            }
+
+            &.luxury__desc {
+                width: 60%;
+            }
+        }
+
+        a {
+            margin-top: 25px;
+            margin-left: 2.8125rem;
+
+            &.sedan__button {
+                color: $color-orange;
+            }
+
+            &.suvs__button {
+                color: $color-turquesa;
+            }
+
+            &.luxury__button {
+                color: $color-green;
+            }
+        }
+    }
+}

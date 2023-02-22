@@ -1,0 +1,19 @@
+@import "variables";
+
+.button {
+    display: flex;
+    align-items: center;
+    border-radius: 1.875rem;
+
+    &.button-primary {
+        background-color: white;
+        font-family: $text-font;
+        width: 50%;
+        height: 3rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: .9375rem;
+        line-height: 1.5625rem;
+        justify-content: center;
+    }
+}
